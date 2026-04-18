@@ -3,7 +3,7 @@ const productos = [
     {
         id: "entrada-01",
         titulo: "Arepas Con Aguacate Y Atún",
-        imagen: "../img/comida/Arepas-de-atun-y-aguacate.jpg",
+        imagen: "./img/comida/Arepas-de-atun-y-aguacate.jpg",
         categoria: {
             nombre: "Entradas",
             id: "Entradas"
@@ -13,7 +13,7 @@ const productos = [
     {
         id: "entrada-02",
         titulo: "Empanadas De Queso",
-        imagen: "../img/comida/Empanadas-de-queso-en-la-freidora-de-aire.jpg",
+        imagen: "./img/comida/Empanadas-de-queso-en-la-freidora-de-aire.jpg",
         categoria: {
             nombre: "Entradas",
             id: "Entradas"
@@ -23,7 +23,7 @@ const productos = [
     {
         id: "entrada-03",
         titulo: "Torre De Camarones",
-        imagen: "../img/comida/Causa-de-camaron-receta-facil.webp",
+        imagen: "./img/comida/Causa-de-camaron-receta-facil.webp",
         categoria: {
             nombre: "Entradas",
             id: "Entradas"
@@ -33,7 +33,7 @@ const productos = [
     {
         id: "entrada-04",
         titulo: "Quesadiilas Mexicanas",
-        imagen: "../img/comida/Quesadillas-mexicanas-de-camarones-con-chimichurri.jpg",
+        imagen: "./img/comida/Quesadillas-mexicanas-de-camarones-con-chimichurri.jpg",
         categoria: {
             nombre: "Entradas",
             id: "Entradas"
@@ -43,7 +43,7 @@ const productos = [
     {
         id: "entrada-05",
         titulo: "Camarones Al Ajillo",
-        imagen: "../img/comida/Receta-de-camarones-al-ajillo.jpg",
+        imagen: "./img/comida/Receta-de-camarones-al-ajillo.jpg",
         categoria: {
             nombre: "Entradas",
             id: "Entradas"
@@ -53,7 +53,7 @@ const productos = [
     {
         id: "entrada-06",
         titulo: "Croquetas De Papa",
-        imagen: "../img/comida/Receta-de-las-croquetas-de-papa-y-atun.jpg",
+        imagen: "./img/comida/Receta-de-las-croquetas-de-papa-y-atun.jpg",
         categoria: {
             nombre: "Entradas",
             id: "Entradas"
@@ -64,7 +64,7 @@ const productos = [
     {
         id: "plato-01",
         titulo: "Churrasco",
-        imagen:"../img/comida/churrasco.jpg",
+        imagen:"./img/comida/churrasco.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -74,7 +74,7 @@ const productos = [
     {
         id: "plato-02",
         titulo: "Bocachico",
-        imagen:"../img/comida/bocachico.jpg",
+        imagen:"./img/comida/bocachico.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -84,7 +84,7 @@ const productos = [
     {
         id: "plato-03",
         titulo: "Bandeja Paisa",
-        imagen:"../img/comida/bandeja.jpg",
+        imagen:"./img/comida/bandeja.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -94,7 +94,7 @@ const productos = [
     {
         id: "plato-04",
         titulo: "Pechuga Gratinada",
-        imagen:"../img/comida/pechuga-gratinada.jpg",
+        imagen:"./img/comida/pechuga-gratinada.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -104,7 +104,7 @@ const productos = [
     {
         id: "plato-05",
         titulo: "Costillas Ahumadas",
-        imagen:"../img/comida/costillas-ahumadas.jpg",
+        imagen:"./img/comida/costillas-ahumadas.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -114,7 +114,7 @@ const productos = [
     {
         id: "plato-06",
         titulo: "Mojarra Frita",
-        imagen:"../img/comida/mojarra.jpg",
+        imagen:"./img/comida/mojarra.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -124,7 +124,7 @@ const productos = [
     {
         id: "plato-07",
         titulo: "Sancocho",
-        imagen:"../img/comida/sancocho.jpg",
+        imagen:"./img/comida/sancocho.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -134,7 +134,7 @@ const productos = [
     {
         id: "plato-08",
         titulo: "Ajiaco",
-        imagen:"../img/comida/ajiaco.jpg",
+        imagen:"./img/comida/ajiaco.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -144,7 +144,7 @@ const productos = [
     {
         id: "plato-09",
         titulo: "Tamal",
-        imagen:"../img/comida/tamal.jpg",
+        imagen:"./img/comida/tamal.jpg",
         categoria: {
             nombre: "Platos Fuertes",
             id: "Platos Fuertes"
@@ -155,7 +155,7 @@ const productos = [
     {
         id: "bebida-01",
         titulo: "Jugo De Guanabana",
-        imagen:"../img/bebidas/guanaba.jpg",
+        imagen:"./img/bebidas/guanaba.jpg",
         categoria: {
             nombre: "Bebidas",
             id: "Bebidas"
@@ -165,7 +165,7 @@ const productos = [
     {
         id: "bebida-02",
         titulo: "Jugo De Lulo",
-        imagen:"../img/bebidas/lulo.jpg",
+        imagen:"./img/bebidas/lulo.jpg",
         categoria: {
             nombre: "Bebidas",
             id: "Bebidas"
@@ -175,7 +175,7 @@ const productos = [
     {
         id: "bebida-03",
         titulo: "Jugo De Mango",
-        imagen:"../img/bebidas/mango.jpg",
+        imagen:"./img/bebidas/mango.jpg",
         categoria: {
             nombre: "Bebidas",
             id: "Bebidas"
@@ -185,7 +185,7 @@ const productos = [
     {
         id: "bebida-04",
         titulo: "Jugo De Maracuya",
-        imagen:"../img/bebidas/maracuya.jpg",
+        imagen:"./img/bebidas/maracuya.jpg",
         categoria: {
             nombre: "Bebidas",
             id: "Bebidas"
@@ -195,7 +195,7 @@ const productos = [
     {
         id: "bebida-05",
         titulo: "Jugo De Mora",
-        imagen:"../img/bebidas/mora.jpg",
+        imagen:"./img/bebidas/mora.jpg",
         categoria: {
             nombre: "Bebidas",
             id: "Bebidas"
@@ -206,7 +206,7 @@ const productos = [
     {
         id: "postre-01",
         titulo: "Banana Split",
-        imagen:"../img/postres/postre-banana.jpg",
+        imagen:"./img/postres/postre-banana.jpg",
         categoria: {
             nombre: "Postres",
             id: "Postres"
@@ -216,7 +216,7 @@ const productos = [
     {
         id: "postre-02",
         titulo: "Postre De Chocolate",
-        imagen:"../img/postres/postre-choco.jpg",
+        imagen:"./img/postres/postre-choco.jpg",
         categoria: {
             nombre: "Postres",
             id: "Postres"
@@ -226,7 +226,7 @@ const productos = [
     {
         id: "postre-03",
         titulo: "Postre De Fresa",
-        imagen:"../img/postres/postre-fresa.jpg",
+        imagen:"./img/postres/postre-fresa.jpg",
         categoria: {
             nombre: "Postres",
             id: "Postres"
@@ -236,7 +236,7 @@ const productos = [
     {
         id: "postre-04",
         titulo: "Postre De Oreo",
-        imagen:"../img/postres/postre-oro.jpg",
+        imagen:"./img/postres/postre-oro.jpg",
         categoria: {
             nombre: "Postres",
             id: "Postres"
@@ -246,7 +246,7 @@ const productos = [
     {
         id: "postre-05",
         titulo: "Flan",
-        imagen:"../img/postres/flan.jpg",
+        imagen:"./img/postres/flan.jpg",
         categoria: {
             nombre: "Postres",
             id: "Postres"
