@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul { list-style-type: none; }
+a { text-decoration: none; }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #1A1A1A;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(97, 23, 206, 0.15) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(97, 23, 206, 0.1) 0px, transparent 50%);
+    min-height: 100vh;
+}
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: #E0E0E0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+    background-color: #6117CE;
+    color:#E0E0E0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(97, 23, 206, 0.5);
+    transition: 0.8s;
+    cursor: default;        
+    position: absolute;
+    top: 2rem;
+    right: 2.9rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.boton-menu {
+    background-color: transparent;
+    border: 0;
+    color: #E0E0E0;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: .85rem;
+    box-sizing: border-box;
+}
+.boton-menu.active{
+    background-color: #E0E0E0;
+    color: #6117CE;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+.boton-menu.active::before{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;  
+    box-shadow: 0 1rem 0 #E0E0E0;
+}
+.boton-menu.active::after{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 #E0E0E0;
+}
+.boton-menu > i.bi-hand-index-thumb,
+.boton-menu > i.bi-hand-index-thumb-fill{
+    transform: rotateZ(90deg);
+}
+
+.boton-volver { margin-top: 2rem; color: #ff4d4d; }
+
+
+main {
+    background-color: #E0E0E0;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-principal {
+    color: #6117CE;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor-login {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Reutilizamos 'producto-detalle' para el fondo oscuro y gradiente */
+.producto-detalle {
+    background-color: #1A1A1A;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(97, 23, 206, 0.15) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(97, 23, 206, 0.1) 0px, transparent 50%); 
+    color: #E0E0E0;
+    border-radius: 5rem;
+    z-index: 1;
+}
+
+.login-card {
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px; 
+}
+
+.login-icon {
+    font-size: 4rem;
+    color: #6117CE;
+    margin-bottom: 1rem;
+}
+
+.texto-ingrese-usuario-roles {
+    font-family: "Pacifico", cursive;
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #2a2a2a;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.boton-entrar-login {
+    background-color: #6117CE;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.4s;
+    font-size: 1.1rem;
+    box-shadow: 0 0 15px rgba(97, 23, 206, 0.4);
+}
+
+.boton-entrar-login:hover {
+    background-color: white;
+    color: #6117CE;
+    transform: translateY(-5px);
+}
+
+.texto-footer { color: #6117CE; font-weight: bold; opacity: 0.7; }

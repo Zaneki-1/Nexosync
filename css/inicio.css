@@ -1,0 +1,149 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1A1A1A;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(97, 23, 206, 0.15) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(97, 23, 206, 0.1) 0px, transparent 50%);
+    margin: 0;
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.barranav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    border: 1px solid #2a2a2a;
+    box-shadow: #2a2a2a;
+}
+.logo{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    background-color: #6117CE;
+    color:#E0E0E0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(97, 23, 206, 0.5);    
+}
+.opciones{
+    display: flex;
+    background-color: none;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.boton1,.boton2,.boton3,.boton4,.boton5{
+    text-decoration: none;
+    font-family: "monserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #E0E0E0;
+    font-size: 18px;
+    padding: 20px 50px;
+    transition: background-color  0.3s ease;
+}
+.opciones a{
+    border-right: 1px solid #333333;
+    padding: 20px 50px;
+}
+.opciones a:last-child {
+    border-right: none; /* Quita la Ãºltima lÃ­nea */
+}
+.boton1:hover,.boton2:hover,.boton3:hover,.boton4:hover,.boton5:hover{
+    background-color:#303030;
+    cursor: pointer;
+}
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(97, 23, 206, 0.15) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(97, 23, 206, 0.1) 0px, transparent 50%);
+    padding: 40px 20px; 
+    width: 90%;
+    max-width: 450px;    
+    margin: auto;        
+    border: 1px solid #2a2a2a;
+    border-radius: 50px;
+    box-sizing: border-box; 
+}
+.logo1{ 
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    background-color: #6117CE;
+    color:#E0E0E0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(97, 23, 206, 0.5);   
+}
+.texing{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #6117CE;
+    text-shadow: 0 0 15px rgba(97, 23, 206, 0.5);
+    margin-bottom: 8px;
+}
+.texcre{
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #E0E0E0;
+    margin-bottom: 15px;
+}
+.cuadro3, .cuadro4{
+    width: 250px;
+    height: 40px;   
+    background-color: #1A1A1A;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(97, 23, 206, 0.15) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(97, 23, 206, 0.1) 0px, transparent 50%);
+    margin: 0;
+    color: #E0E0E0;
+    border-radius: 20px;    
+    border: 1px solid #2a2a2a;
+    padding: 0 20px;      
+    box-sizing: border-box; 
+    outline: none;          
+    font-size: 13px;
+    margin-bottom: 8px;
+}   
+.cuadro3:focus, .cuadro4:focus {
+    border: 1.5px solid  rgba(97, 23, 206, 0.5);
+}
+.boton-reg, .boton-gog{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    color: #E0E0E0  ;
+    background-color: #6117CE;
+    box-shadow: 0 0 15px rgba(97, 23, 206, 0.5);   
+    transition: 0.3s;
+    margin-bottom: 5px;
+    border: none;
+}
+.boton-reg:hover,.boton-gog:hover{
+    background-color: #E0E0E0;
+    color: #6117CE;
+    width: 190px;
+    height: 50px;
+}
+.texcon{
+    font-family: "Monserrat", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #E0E0E0;
+}

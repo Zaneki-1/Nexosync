@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexoSync - Clientes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Nexosync</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button class="boton-menu boton-categoria" onclick="window.location.href='home.html'">
+                            <i class="bi bi-hand-index-thumb-fill"></i>Todos Los Productos
+                        </button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria active">
+                            <i class="bi bi-hand-index-thumb-fill"></i>Clientes
+                        </button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria" onclick="window.location.href='mesas.html'">
+                            <i class="bi bi-hand-index-thumb"></i>Mesas
+                        </button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-categoria" href="pedido.html">
+                            <i class="bi bi-hand-index-thumb"></i>Pedidos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-volver" href="principal.html">
+                            <i class="bi bi-arrow-left-circle-fill"></i>Salir
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2026 NexoSync</p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">Factura de Cliente</h2>
+
+            <div class="clientes-layout">
+
+                <!-- COLUMNA IZQUIERDA: Formulario -->
+                <section class="factura-form-seccion">
+
+                    <!-- Datos del cliente -->
+                    <div class="form-bloque">
+                        <div class="form-bloque-titulo">
+                            <i class="bi bi-person-vcard-fill"></i> Datos del Cliente
+                        </div>
+                        <div class="form-grupo-doble">
+                            <div class="form-grupo">
+                                <label>Nombre completo</label>
+                                <input type="text" id="cliente-nombre" placeholder="Ej: Juan García" autocomplete="off">
+                            </div>
+                            <div class="form-grupo">
+                                <label>Documento (CC / NIT)</label>
+                                <input type="text" id="cliente-doc" placeholder="Ej: 1234567890">
+                            </div>
+                        </div>
+                        <div class="form-grupo-doble">
+                            <div class="form-grupo">
+                                <label>Teléfono</label>
+                                <input type="tel" id="cliente-tel" placeholder="Ej: 3001234567">
+                            </div>
+                            <div class="form-grupo">
+                                <label>Correo electrónico</label>
+                                <input type="email" id="cliente-email" placeholder="correo@ejemplo.com">
+                            </div>
+                        </div>
+                        <div class="form-grupo-doble">
+                            <div class="form-grupo">
+                                <label>Mesa asignada</label>
+                                <select id="cliente-mesa">
+                                    <option value="">— Seleccionar —</option>
+                                </select>
+                            </div>
+                            <div class="form-grupo">
+                                <label>Número de personas</label>
+                                <input type="number" id="cliente-personas" placeholder="Ej: 2" min="1" max="20">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Método de pago -->
+                    <div class="form-bloque">
+                        <div class="form-bloque-titulo">
+                            <i class="bi bi-credit-card-fill"></i> Método de Pago
+                        </div>
+                        <div class="metodos-pago">
+                            <label class="metodo-option">
+                                <input type="radio" name="pago" value="efectivo" checked>
+                                <span class="metodo-card">
+                                    <i class="bi bi-cash-stack"></i>
+                                    <span>Efectivo</span>
+                                </span>
+                            </label>
+                            <label class="metodo-option">
+                                <input type="radio" name="pago" value="tarjeta">
+                                <span class="metodo-card">
+                                    <i class="bi bi-credit-card"></i>
+                                    <span>Tarjeta</span>
+                                </span>
+                            </label>
+                            <label class="metodo-option">
+                                <input type="radio" name="pago" value="nequi">
+                                <span class="metodo-card">
+                                    <i class="bi bi-phone-fill"></i>
+                                    <span>Nequi</span>
+                                </span>
+                            </label>
+                            <label class="metodo-option">
+                                <input type="radio" name="pago" value="daviplata">
+                                <span class="metodo-card">
+                                    <i class="bi bi-phone"></i>
+                                    <span>Daviplata</span>
+                                </span>
+                            </label>
+                            <label class="metodo-option">
+                                <input type="radio" name="pago" value="transferencia">
+                                <span class="metodo-card">
+                                    <i class="bi bi-bank2"></i>
+                                    <span>Transferencia</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Calificación del servicio -->
+                    <div class="form-bloque">
+                        <div class="form-bloque-titulo">
+                            <i class="bi bi-star-fill"></i> Calificación del Servicio
+                        </div>
+                        <div class="estrellas-wrapper">
+                            <div class="estrellas" id="estrellas">
+                                <i class="bi bi-star" data-val="1"></i>
+                                <i class="bi bi-star" data-val="2"></i>
+                                <i class="bi bi-star" data-val="3"></i>
+                                <i class="bi bi-star" data-val="4"></i>
+                                <i class="bi bi-star" data-val="5"></i>
+                            </div>
+                            <span class="estrellas-label" id="estrellas-label">Sin calificación</span>
+                        </div>
+                        <div class="form-grupo" style="margin-top:.8rem">
+                            <label>Comentario (opcional)</label>
+                            <textarea id="cliente-comentario" placeholder="¿Cómo fue tu experiencia?" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <button class="btn-generar" id="btn-generar">
+                        <i class="bi bi-receipt"></i> Generar Factura
+                    </button>
+                </section>
+
+                <!-- COLUMNA DERECHA: Resumen / Factura -->
+                <section class="factura-resumen-seccion">
+                    <div class="resumen-header">
+                        <span class="resumen-badge">Vista previa</span>
+                        <h3>Resumen de Pedido</h3>
+                    </div>
+
+                    <!-- Estado del carrito -->
+                    <div id="resumen-vacio" class="resumen-vacio">
+                        <i class="bi bi-cart-x"></i>
+                        <p>No hay productos en el carrito aún.</p>
+                        <small>Agrégalos desde "Todos los Productos"</small>
+                    </div>
+
+                    <div id="resumen-items" class="resumen-items"></div>
+
+                    <div id="resumen-totales" class="resumen-totales" style="display:none">
+                        <div class="total-fila">
+                            <span>Subtotal</span>
+                            <span id="r-subtotal">$0</span>
+                        </div>
+                        <div class="total-fila">
+                            <span>IVA (19%)</span>
+                            <span id="r-iva">$0</span>
+                        </div>
+                        <div class="total-fila total-grande">
+                            <span>Total</span>
+                            <span id="r-total">$0</span>
+                        </div>
+                    </div>
+
+                    <!-- Factura generada (oculta hasta generar) -->
+                    <div id="factura-generada" class="factura-generada" style="display:none">
+                        <div class="factura-encabezado">
+                            <div class="factura-logo-texto">Nexosync</div>
+                            <div class="factura-meta">
+                                <span id="f-numero">Factura #0001</span>
+                                <span id="f-fecha"></span>
+                            </div>
+                        </div>
+                        <div class="factura-cliente-info">
+                            <div><i class="bi bi-person-fill"></i> <span id="f-nombre">—</span></div>
+                            <div><i class="bi bi-card-text"></i> <span id="f-doc">—</span></div>
+                            <div><i class="bi bi-telephone-fill"></i> <span id="f-tel">—</span></div>
+                            <div><i class="bi bi-envelope-fill"></i> <span id="f-email">—</span></div>
+                            <div><i class="bi bi-grid-3x3-gap-fill"></i> Mesa: <span id="f-mesa">—</span></div>
+                            <div><i class="bi bi-people-fill"></i> Personas: <span id="f-personas">—</span></div>
+                        </div>
+                        <div id="f-productos-lista" class="f-productos-lista"></div>
+                        <div class="f-totales">
+                            <div class="total-fila"><span>Subtotal</span><span id="f-subtotal">$0</span></div>
+                            <div class="total-fila"><span>IVA (19%)</span><span id="f-iva">$0</span></div>
+                            <div class="total-fila total-grande"><span>Total</span><span id="f-total">$0</span></div>
+                        </div>
+                        <div class="f-footer">
+                            <div class="f-pago"><i class="bi bi-credit-card-fill"></i> Pago: <span id="f-metodo">—</span></div>
+                            <div class="f-calificacion">
+                                <i class="bi bi-star-fill"></i> Calificación: <span id="f-estrellas">—</span>
+                            </div>
+                        </div>
+                        <div class="f-gracias">¡Gracias por visitarnos! 🍽️</div>
+                        <div class="f-acciones">
+                            <button class="btn-imprimir" onclick="window.print()">
+                                <i class="bi bi-printer-fill"></i> Imprimir
+                            </button>
+                            <button class="btn-nueva" id="btn-nueva-factura">
+                                <i class="bi bi-plus-circle-fill"></i> Nueva Factura
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/clientes.js"></script>
+</body>
+</html>
