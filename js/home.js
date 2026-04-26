@@ -252,6 +252,16 @@ const productos = [
             id: "Postres"
         },
         precio: 8000
+    },
+    {
+        id: "postre-06",
+        titulo: "Tiramisu",
+        imagen:"./img/postres/tiramisu.jpg",
+        categoria: {
+            nombre: "Postres",
+            id: "Postres"
+        },
+        precio: 10000
     }
 ];
 
