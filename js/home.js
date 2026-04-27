@@ -60,6 +60,16 @@ const productos = [
         },
         precio: 12000
     },
+    {
+        id: "entrada-07",
+        titulo: "Porción De Papas Francesa",
+        imagen: "./img/comida/papas.jpg",
+        categoria: {
+            nombre: "Entradas",
+            id: "Entradas"
+        },
+        precio: 6000
+    },
     //Platos Fuertes//
     {
         id: "plato-01",
@@ -151,6 +161,16 @@ const productos = [
         },
         precio: 15000
     },
+    {
+        id: "plato-10",
+        titulo: "Camarones Salteado",
+        imagen:"./img/comida/camarones.jpg",
+        categoria: {
+            nombre: "Platos Fuertes",
+            id: "Platos Fuertes"
+        },
+        precio: 18000
+    },
     //Bebidas//
     {
         id: "bebida-01",
@@ -196,6 +216,46 @@ const productos = [
         id: "bebida-05",
         titulo: "Jugo De Mora",
         imagen:"./img/bebidas/mora.jpg",
+        categoria: {
+            nombre: "Bebidas",
+            id: "Bebidas"
+        },
+        precio: 7000
+    },
+    {
+        id: "bebida-06",
+        titulo: "Chocolate",
+        imagen:"./img/bebidas/chocolate.jpg",
+        categoria: {
+            nombre: "Bebidas",
+            id: "Bebidas"
+        },
+        precio: 7000
+    },
+    {
+        id: "bebida-07",
+        titulo: "Pepsi 250ml",
+        imagen:"./img/bebidas/pepsi.jpg",
+        categoria: {
+            nombre: "Bebidas",
+            id: "Bebidas"
+        },
+        precio: 4000
+    },
+    {
+        id: "bebida-08",
+        titulo: "Coca Cola 250ml",
+        imagen:"./img/bebidas/coca.jpg",
+        categoria: {
+            nombre: "Bebidas",
+            id: "Bebidas"
+        },
+        precio: 4000
+    },
+    {
+        id: "bebida-09",
+        titulo: "Limonada De Coco",
+        imagen:"./img/bebidas/limonada.jpg",
         categoria: {
             nombre: "Bebidas",
             id: "Bebidas"
@@ -257,6 +317,16 @@ const productos = [
         id: "postre-06",
         titulo: "Tiramisu",
         imagen:"./img/postres/tiramisu.jpg",
+        categoria: {
+            nombre: "Postres",
+            id: "Postres"
+        },
+        precio: 10000
+    },
+    {
+        id: "postre-07",
+        titulo: "Quesillo",
+        imagen:"./img/postres/quesillo.jpg",
         categoria: {
             nombre: "Postres",
             id: "Postres"
